@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável - Guia de Manejo Integrado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i> Agro<span>Sustentável</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#identificador">Identificar Pragas</a></li>
+                    <li><a href="#solucoes">Soluções Biológicas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</h1>
+            <p>Apoio inteligente para o pequeno produtor. Proteja sua lavoura com soluções biológicas, livre de agrotóxicos e em harmonia com a natureza.</p>
+            <a href="#identificador" class="btn-primary">Iniciar Diagnóstico Inteligente</a>
+        </div>
+    </section>
+
+    <section id="identificador" class="upload-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Guia Inteligente de Manejo Integrado</h2>
+                <p>Envie uma foto da praga ou da folha danificada para receber uma recomendação de controle biológico instantânea.</p>
+            </div>
+
+            <div class="card-upload">
+                <div class="drop-zone" id="drop-zone">
+                    <i class="fa-solid fa-cloud-arrow-up drop-icon"></i>
+                    <p>Arraste a foto aqui ou <span class="highlight">clique para buscar</span></p>
+                    <input type="file" id="file-input" accept="image/*" hidden>
+                </div>
+                <div id="preview-container" class="hidden">
+                    <img id="image-preview" src="#" alt="Prévia da praga">
+                    <button id="btn-analisar" class="btn-submit">Analisar Imagem</button>
+                </div>
+            </div>
+
+            <div id="result-card" class="result-card hidden">
+                <h3><i class="fa-solid fa-square-check text-success"></i> Diagnóstico Concluído!</h3>
+                <div class="result-details">
+                    <p><strong>Praga Identificada:</strong> <span id="detected-pest">Carregando...</span></p>
+                    <div class="solution-box">
+                        <h4><i class="fa-solid fa-seedling"></i> Solução Biológica Recomendada:</h4>
+                        <p id="pest-solution">Carregando...</p>
+                    </div>
+                </div>
+                <button id="btn-reset" class="btn-secondary">Nova Consulta</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="solucoes" class="solutions-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Principais Defensores Biológicos</h2>
+                <p>Conheça os métodos naturais mais eficientes para manter o equilíbrio da sua plantação.</p>
+            </div>
+
+            <div class="grid-solucoes">
+                <div class="card-solucao">
+                    <div class="card-icon"><i class="fa-solid fa-bug"></i></div>
+                    <h3>Joaninhas (Predadores)</h3>
+                    <p>Excelentes para o controle natural de pulgões e ácaros. Uma única joaninha pode consumir mais de 50 pulgões por dia.</p>
+                </div>
+                <div class="card-solucao">
+                    <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Caldas Naturais</h3>
+                    <p>Preparados à base de fumo, alho ou sabão neutro que repelem insetos sem agredir o solo ou contaminar os alimentos.</p>
+                </div>
+                <div class="card-solucao">
+                    <div class="card-icon"><i class="fa-solid fa-dna"></i></div>
+                    <h3>Microorganismos</h3>
+                    <p>Uso de fungos e bactérias benéficas (como o <em>Bacillus thuringiensis</em>) que atacam especificamente as lagartas nocivas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 AgroSustentável. Cultivando o futuro em equilíbrio com a natureza.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
